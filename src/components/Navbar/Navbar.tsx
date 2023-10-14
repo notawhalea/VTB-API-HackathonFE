@@ -30,7 +30,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link to="/" style={{ color: "black" }}>
-                            Пожертования
+                            Пожертвования
                         </Link>
                     </li>
                     <li>
