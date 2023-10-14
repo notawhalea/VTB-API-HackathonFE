@@ -1,0 +1,34 @@
+.popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.popupInner {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+  width: 30%;
+  min-height: 550px;
+  min-width: 350px;
+  overflow-y: hidden;
+}
+@media screen and (max-height: 600px) {
+  .popupInner{
+    top: 60%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .popupInner{
+    padding: 5px;
+  }
+}
