@@ -38,7 +38,7 @@
   background: #31A062;
 }
 .linkLogin{
-  margin-top: 10px;
+  margin: 10px 0;
   display: block;
   font-family: Noto Sans, sans-serif;
   font-size: 17px;
@@ -48,11 +48,8 @@
   text-align: center;
   color: #31A062;
 }
-@media screen and (max-width: 470px) {
-  .walletTitle{
-    font-size: 22px;
-  }
-  .walletTitleGap{
-    font-size: 22px;
+@media screen and (max-width: 898px) {
+  .linkLogin{
+    color: #31A062;
   }
 }
