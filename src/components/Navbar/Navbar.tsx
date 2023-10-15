@@ -9,14 +9,14 @@ const Navbar = () => {
     return (
         <>
             <nav className={styles.navbar}>
-                <div>
+                <div >
                     <NavLink
                         to="/"
                         end
-                        style={{ textDecoration: "none", color: "black", display: "flex" }}
+                        className={styles.navbarLogo}
                     >
                         <img src="src/assets/logo.png" alt="Logo" height="80px"/>
-                        <h3 className={styles.logo}>Кошелек Добра</h3>
+                        <p className={styles.logo}>Кошелек Добра</p>
                     </NavLink>
                 </div>
                 <ul
@@ -24,17 +24,17 @@ const Navbar = () => {
                     onClick={() => setMobile(false)}
                 >
                     <li>
-                        <Link to="/" style={{ color: "black" }}>
+                        <Link to="/">
                             Фонды
                         </Link>
                     </li>
                     <li>
-                        <Link to="/" style={{ color: "black" }}>
+                        <Link to="/">
                             Пожертвования
                         </Link>
                     </li>
                     <li>
-                        <Link to="/" style={{ color: "black" }}>
+                        <Link to="/">
                             Профиль
                         </Link>
                     </li>
