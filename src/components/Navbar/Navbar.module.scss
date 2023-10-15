@@ -9,19 +9,20 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 li {
   list-style-type: none;
-  color: black;
+  font-weight: bold;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
-  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
+  height: 11vh;
+  box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -30,12 +31,19 @@ li {
   display: flex;
   align-items: center;
   font-size: 30px;
+  font-weight: bold;
+}
+
+.navbarLogo{
+  text-decoration: none;
+  color: black;
+  display: flex !important;
 }
 
 .navLinks {
   display: flex;
   justify-content: flex-end;
-  width: 75%;
+  width: 55%;
 }
 
 .navLinks li {
@@ -45,21 +53,6 @@ li {
   margin: 0 10px;
   cursor: pointer;
   text-transform: capitalize;
-}
-
-.currLogo {
-  font-size: 32px;
-  margin-top: 6px;
-}
-
-.hero {
-  text-align: center;
-  margin-top: 15%;
-}
-
-.hero h1 {
-  text-align: center;
-  font-size: 80px;
 }
 
 .mobileMenuIcon {
@@ -78,18 +71,11 @@ button {
 }
 
 @media (max-width: 898px) {
-  .currLogo {
+  .navbarLogo {
     display: flex;
     position: absolute;
-    top: 0.8rem;
-    left: 28px;
-  }
-  .logo {
-    display: flex;
-    position: absolute;
-    top: 0.8rem;
-    left: 58px;
-    color: black !important;
+    top: 5px;
+    left: 57px;
   }
   .navLinks {
     display: none;
@@ -98,7 +84,7 @@ button {
     position: absolute;
     display: block;
     list-style: none;
-    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.23) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     left: 0;
     top: 4rem;
     transition: all 0.5s ease-in-out;
@@ -116,7 +102,9 @@ button {
     display: block;
     right: 20px;
   }
-  .hero h1 {
-    font-size: 50px;
+}
+@media (max-width: 450px) {
+  .logo{
+    display: none;
   }
 }
