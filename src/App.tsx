@@ -1,7 +1,7 @@
 import './App.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import MainLayout from "./layouts/MainLayout.jsx";
-import NotFound from "./components/NotFound.jsx";
+import MainLayout from "./layouts/MainLayout";
+import NotFound from "./components/NotFound";
 import Home from "./components/Home/Home";
 const App = () => {
   return (
