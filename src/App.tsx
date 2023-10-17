@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import NotFound from "./components/NotFound";
-import Home from "./components/Home/Home";
+import NotFound from "./pages/NotFound/NotFound";
+import Home from "./pages/Home/Home";
 import { OidcProvider } from "@axa-fr/react-oidc";
 import { withOidcSecure } from "@axa-fr/react-oidc";
 import Modal from "./components/Modal/Modal";
@@ -26,10 +26,10 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
             <Route path="/" element={<MainLayout />}>
               <Route path="/" element={<Modal />} />
-              <Route path="/auth" element={withOidcSecure(Home)} />
-              <Route path="/funds" element={withOidcSecure(Home)} />
-              <Route path="/donations" element={withOidcSecure(Home)} />
-              <Route path="/profile" element={withOidcSecure(Home)} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/funds" element={<Home />} />
+              <Route path="/donations" element={<Home />} />
+              <Route path="/profile" element={<Home />} />
             </Route>
           </Routes>
         </div>
