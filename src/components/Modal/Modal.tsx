@@ -15,7 +15,7 @@ const Modal = () => {
             <p className={styles.subTitle}>
               Мы расскажем как можно начать помогать даже если денег нет{" "}
             </p>
-            <Link to="/auth">
+            <Link to="/home">
               <button className={styles.buttonRegister}>Войти</button>
             </Link>
           </div>
