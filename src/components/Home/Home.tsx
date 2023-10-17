@@ -1,10 +1,11 @@
 import React from "react";
+import { OidcSecure } from "@axa-fr/react-oidc";
 const Home = () => {
-    return (
-        <section className="hero">
-            <h1>Home</h1>
-        </section>
-    );
+  return (
+    <OidcSecure>
+      <h1>Home</h1>
+    </OidcSecure>
+  );
 };
 
 export default Home;
