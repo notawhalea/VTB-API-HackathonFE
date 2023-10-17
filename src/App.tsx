@@ -1,10 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import NotFound from "./pages/NotFound/NotFound";
-import Home from "./pages/Home/Home";
+import { Home, NotFound, Funds } from "./pages/index";
 import { OidcProvider } from "@axa-fr/react-oidc";
-import { withOidcSecure } from "@axa-fr/react-oidc";
 import Modal from "./components/Modal/Modal";
 const App = () => {
   const configuration = {
@@ -12,11 +10,11 @@ const App = () => {
     redirect_uri: window.location.origin + "/authentication/callback",
     silent_redirect_uri:
       window.location.origin + "/authentication/silent-callback",
-    scope: "openid profile email api offline_access", // offline_access scope allow your client to retrieve the refresh_token
+    scope: "openid profile email api offline_access",
     authority: "https://demo.duendesoftware.com",
-    service_worker_relative_url: "/OidcServiceWorker.js", // just comment that line to disable service worker mode
+    service_worker_relative_url: "/OidcServiceWorker.js",
     service_worker_only: false,
-    demonstrating_proof_of_possession: false, // demonstrating proof of possession will work only if access_token is accessible from the client (This is because WebCrypto API is not available inside a Service Worker)
+    demonstrating_proof_of_possession: false,
   };
   return (
     <OidcProvider configuration={configuration}>
@@ -27,7 +25,7 @@ const App = () => {
             <Route path="/" element={<MainLayout />}>
               <Route path="/" element={<Modal />} />
               <Route path="/home" element={<Home />} />
-              <Route path="/funds" element={<Home />} />
+              <Route path="/funds" element={<Funds />} />
               <Route path="/donations" element={<Home />} />
               <Route path="/profile" element={<Home />} />
             </Route>

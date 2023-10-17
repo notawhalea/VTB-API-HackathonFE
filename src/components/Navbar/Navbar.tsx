@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav className={styles.navbar}>
         <div>
           <NavLink to="/home" end className={styles.navbarLogo}>
-            <img src="src/assets/logo.png" alt="Logo" height="80px" />
+            <img src="src/assets/images/logo.png" alt="Logo" height="80px" />
             <p className={styles.logo}>Кошелек Добра</p>
           </NavLink>
         </div>

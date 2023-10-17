@@ -7,7 +7,7 @@ const Modal = () => {
       <div className={styles.popup}>
         <div className={styles.popupInner}>
           <div className={styles.mainContainer}>
-            <img src="src/assets/logo.png" alt="Logo" height="200" />
+            <img src="src/assets/images/logo.png" alt="Logo" height="200" />
             <p className={styles.walletTitleGap}>Кошелек добра</p>
             <p className={styles.walletTitle}>
               Сделай первый шаг на пути к добру
