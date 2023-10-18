@@ -1,27 +1,38 @@
-# React + TypeScript + Vite
+# HELLO WORLD! :earth_africa:
+**********
+**Charity Wallet FrontEnd**:clipboard:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Main stack of this application: *TypeScript, React.JS, SCSS, HTML, OpenID*:stuck_out_tongue:
 
-Currently, two official plugins are available:
+This is my *vision* for the implementation of this task.
+**********
+**Project idea**:question:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Charity Wallet allows you to receive information about the user’s purchases from any banks, round up the amount of these purchases with a given increment and send the difference to charitable foundations.
 
-## Expanding the ESLint configuration
+The application will be useful for those who want to make a contribution to charity, but do not know where to start and think that this requires a large investment.
+**********
+**User guide**:paperclip:
+1. Download zip-archive with code and open it in *VSCode/WebStorm*.
+2. Change directory in console to first/second version
+   `cd VTB-API-HackathonFE`
+3. In console write next command to install all dependencies and modules for our project.
+   `npm install`
+4. Then in console write next command to start program in live server.
+   `npm run dev`
+5. In browser search bar type next text `http://127.0.0.1:5173/` or it will open automatically
+6. Enjoy it!
+**********
+**How does it look like**:eyes:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+*Screen of app(unauth)*
+![howdoesitlooklikelight](src/assets/screens/defaultScreen.png)
 
-- Configure the top-level `parserOptions` property like this:
+*Screen of app(auth)*
+![howdoesitlooklikelight](src/assets/screens/authScreen.png)
+**********
+I just relax and gained experience here.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Still in progress? Convert to draft!:wink:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+>I had all and then most of you. Some and now none of you. Take me back to the night we met. I don't know what I'm supposed to do. Haunted by the ghost of you. Oh, take me back to the night we met :microphone:Lord Huron — The night we met 
